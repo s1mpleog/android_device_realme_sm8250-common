@@ -1026,6 +1026,30 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
        </interface>
     </hal>
     <hal format="aidl" optional="true">
+        <name>vendor.oplus.hardware.commondcs</name>
+        <version>1</version>
+        <interface>
+            <name>ICommonDcsAidlHalService</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.oplus.hardware.cameraextension</name>
+        <version>1</version>
+        <interface>
+            <name>ICameraExtensionService</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.oplus.hardware.cammidasservice</name>
+        <version>1</version>
+        <interface>
+            <name>IMIDASService</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
         <name>vendor.qti.hardware.display.config</name>
         <version>1-5</version>
         <interface>
