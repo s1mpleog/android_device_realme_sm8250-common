@@ -63,8 +63,8 @@ function blob_fixup() {
         odm/lib64/libui.so)
             patchelf --replace-needed "android.hardware.graphics.common-V1-ndk_platform.so" "android.hardware.graphics.common-V1-ndk.so" "${2}"
             ;;
-        product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml)
-            sed -i "s|my_product|product|" "${2}"
+        system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml)
+            sed -i "s/my_product/system_ext/" "${2}"
             ;;
         vendor/etc/msm_irqbalance.conf)
             sed -i "s/IGNORED_IRQ=27,23,38$/&,115,332/" "${2}"
