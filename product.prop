@@ -9,3 +9,21 @@ ro.af.client_heap_size_kbyte=7168
 
 # GMS
 ro.opa.device_model_id=ga-oplus-skill-os121-211011
+
+# Disable vsync for cpu rendered apps
+debug.cpurend.vsync=false
+
+# Graphics
+debug.sf.enable_hwc_vds=1
+debug.sf.latch_unsignaled=0
+debug.sf.auto_latch_unsignaled=true
+ro.hwui.render_ahead=10
+ro.config.avoid_gfx_accel=true
+
+# Phantom process monitoring
+sys.fflag.override.settings_enable_monitor_phantom_procs=false
+
+# Radio
+persist.vendor.radio.data_con_rprt=1
+persist.vendor.radio.process_sups_ind=1
+persist.vendor.radio.add_power_save=0
