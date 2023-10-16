@@ -784,9 +784,9 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         </interface>
     </hal>
     <!-- WifiStats HAL service-->
-    <hal format="hidl" optional="true">
+    <hal format="aidl" optional="true">
         <name>android.hardware.wifi</name>
-        <version>1.0-6</version>
+        <version>1</version>
         <interface>
             <name>IWifi</name>
             <instance>default</instance>
