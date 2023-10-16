@@ -140,10 +140,12 @@ PRODUCT_CHARACTERISTICS := nosdcard
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.common-V1-ndk.vendor \
+    android.hardware.graphics.composer@2.1 \
     android.hardware.graphics.mapper@3.0-impl-qti-display \
     android.hardware.graphics.mapper@4.0-impl-qti-display \
     vendor.display.config@1.15.vendor \
     vendor.display.config@2.0.vendor \
+    vendor.display.config@2.0 \
     vendor.qti.hardware.display.allocator-service \
     vendor.qti.hardware.display.composer-service \
     vendor.qti.hardware.display.mapper@1.0.vendor \
