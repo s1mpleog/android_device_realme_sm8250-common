@@ -1868,3 +1868,7 @@ odm/etc/wifi/bin_version
 odm/etc/wifi/regdb.bin
 odm/etc/wifi/regdb_version
 vendor/bin/cnss-daemon
+
+#Protobuf
+vendor/lib64/libprotobuf-cpp-full-3.9.1.so
+vendor/lib64/libprotobuf-cpp-lite-3.9.1.so
