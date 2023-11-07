@@ -1262,6 +1262,8 @@ vendor/lib/libqcodec2_core.so
 vendor/lib/libqcodec2_platform.so
 vendor/lib/libqcodec2_utils.so
 vendor/lib/libqcodec2_v4l2codec.so
+vendor/lib64/libcodec2_hidl@1.0.so
+vendor/lib64/libcodec2_vndk.so
 vendor/lib64/libmmosal.so
 vendor/lib64/libqc2vppfilter.so|07216c66eeb283096a4da88105ec06aefbf41bf6
 vendor/lib64/libqcodec2_base.so
@@ -1866,7 +1868,3 @@ odm/etc/wifi/bin_version
 odm/etc/wifi/regdb.bin
 odm/etc/wifi/regdb_version
 vendor/bin/cnss-daemon
-
-#Protobuf
-vendor/lib64/libprotobuf-cpp-full-3.9.1.so
-vendor/lib64/libprotobuf-cpp-lite-3.9.1.so
