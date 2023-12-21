@@ -69,14 +69,11 @@ function blob_fixup() {
         vendor/lib64/hw/camera.qcom.so)
             grep -q libcamera_metadata_shim.so "${2}" || "${PATCHELF}" --add-needed "libcamera_metadata_shim.so" "${2}"
             ;;
-        vendor/etc/msm_irqbalance.conf)
-            sed -i "s/IGNORED_IRQ=27,23,38$/&,115,332/" "${2}"
-            ;;
         vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so)
             "${SIGSCAN}" -p "AF 0B 00 94" -P "1F 20 03 D5" -f "${2}"
             ;;
-	odm/lib64/libAlgoProcess.so)
-            patchelf --replace-needed "android.hardware.graphics.common-V1-ndk_platform.so" "android.hardware.graphics.common-V1-ndk.so" "${2}"
+        odm/lib64/libAlgoProcess.so)
+            "${PATCHELF}" --replace-needed "android.hardware.graphics.common-V1-ndk_platform.so" "android.hardware.graphics.common-V1-ndk.so" "${2}"
             ;;
         vendor/lib/libgui1_vendor.so)
             "${PATCHELF}" --replace-needed "libui.so" "libui-v30.so" "${2}"
