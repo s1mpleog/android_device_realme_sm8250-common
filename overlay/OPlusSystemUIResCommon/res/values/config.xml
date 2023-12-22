@@ -38,7 +38,7 @@
     <integer name="config_battCurrentDivider" translatable="false">1</integer>
 
     <!-- Preferred refresh rate at keyguard, if supported by the display -->
-    <integer name="config_keyguardRefreshRate">60</integer>
+    <integer name="config_keyguardRefreshRate">120</integer>
     
     <!-- Preferred max refresh rate at keyguard, if supported by the display. -->
     <integer name="config_keyguardMaxRefreshRate">120</integer>
